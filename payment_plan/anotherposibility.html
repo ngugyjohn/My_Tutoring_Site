@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Tutoring Platform</h1>
+    </header>
+    
+    <main>
+        <section id="interaction-restriction">
+            <h2>Interaction Restrictions</h2>
+            <p>Tutors and students can interact but cannot exchange personal details.</p>
+        </section>
+        
+        <section id="lesson-types">
+            <h2>Lesson Types</h2>
+            <div>
+                <input type="radio" id="written-lessons" name="lesson-type" value="written">
+                <label for="written-lessons">Written Lessons</label>
+            </div>
+            <div>
+                <input type="radio" id="live-lessons" name="lesson-type" value="live">
+                <label for="live-lessons">Live Lessons</label>
+            </div>
+            <div>
+                <input type="radio" id="both-lessons" name="lesson-type" value="both">
+                <label for="both-lessons">Both Written and Live Lessons</label>
+            </div>
+        </section>
+        
+        <section id="payment-plans">
+            <h2>Payment Plans</h2>
+            <div class="payment-option">
+                <input type="radio" id="introductory-rate" name="payment-plan" value="introductory-rate">
+                <label for="introductory-rate">Introductory Rate: $15/hour for the first 5 hours</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="per-hour" name="payment-plan" value="per-hour">
+                <label for="per-hour">Standard Rate: $25/hour</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="per-page" name="payment-plan" value="per-page">
+                <label for="per-page">Per Page: $20/page</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="hour-equals-page" name="payment-plan" value="hour-equals-page">
+                <label for="hour-equals-page">One Hour Equals One Page: $20</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="discount-package" name="payment-plan" value="discount-package">
+                <label for="discount-package">Discount Package: 10 hours for $200</label>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tutoring Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Submission and Tutor Proposal Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="number"], input[type="date"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            float: right;
+            margin-top: 10px;
+        }
+        .proposal {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .proposal:first-of-type {
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task Submission and Tutor Proposal Platform</h1>
+    </header>
+
+    <div class="container">
+        <h2>Submit Your Task Requirements</h2>
+        <form id="taskForm">
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline">
+
+            <label for="details">Task Details:</label>
+            <textarea id="details" name="details" rows="5" placeholder="Describe your task..."></textarea>
+
+            <button type="submit">Submit Task</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Tutor Proposals</h2>
+        <!-- Proposals would be dynamically inserted here -->
+        <div class="proposal">
+            <p><strong>Title:</strong> Advanced Calculus Homework Help</p>
+            <p><strong>Proposed Price:</strong> $200</p>
+            <p><strong>Proposed Deadline:</strong> 2023-12-20</p>
+            <button>Accept Proposal</button>
+        </div>
+        <!-- Repeat the above div for each proposal -->
+    </div>
+
+    <footer>
+        <p>Contact Us | FAQ | Support</p>
+    </footer>
+</body>
+</html>

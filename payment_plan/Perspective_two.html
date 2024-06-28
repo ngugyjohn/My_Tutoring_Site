@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Payment Plan</title>
+    <link rel="stylesheet" href="tutorstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Plan Options</h1>
+        <h2>Written Lessons</h2>
+        <div class="written-lessons">
+            <h3>Option One: Budget Based</h3>
+            <form>
+                <label for="budget">Budget ($):</label>
+                <input type="number" id="budget" name="budget" required>
+
+                <label for="numPages">Number of Pages:</label>
+                <input type="number" id="numPages" name="numPages" required>
+
+                <label for="deadline">Deadline/Due Date:</label>
+                <input type="date" id="deadline" name="deadline" required>
+
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions"></textarea>
+                <input type="file" id="attachment" name="attachment">
+                
+                <button type="submit">Book Lesson</button>
+            </form>
+            <p class="note">* Budget should be >= Number of pages × $12</p>
+
+            <h3>Option Two: Hourly Based</h3>
+            <form>
+                <label for="introHours">Introductory Hours (up to 4 hours):</label>
+                <input type="number" id="introHours" name="introHours" min="0" max="4" required>
+                
+                <label for="extraHours">Additional Hours:</label>
+                <input type="number" id="extraHours" name="extraHours" min="0" required>
+                
+                <button type="submit">Calculate Total & Book Lesson</button>
+            </form>
+        </div>
+
+        <h2>Live Lessons</h2>
+        <div class="live-lessons">
+            <h3>Option One: Hourly Rate</h3>
+            <form>
+                <label for="subject1">Select Subject:</label>
+                <input type="text" id="subject1" name="subject1" required>
+                
+                <label for="hours">Number of Hours:</label>
+                <input type="number" id="hours" name="hours" required>
+                
+                <button type="submit">Calculate Total & Book Lesson</button>
+            </form>
+            <p class="note">* Initial rate is $15 for the first 4 hours, then $20 per hour</p>
+
+            <h3>Option Two: Live Session</h3>
+            <form>
+                <label for="subject2">Select Subject:</label>
+                <input type="text" id="subject2" name="subject2" required>
+                
+                <button type="submit">Start Live Lesson</button>
+            </form>
+            <p class="note">* Rate is $0.33 per minute</p>
+        </div>
+    </div>
+</body>
+</html>
