@@ -1,1 +1,184 @@
-Sample Payment Plan Content
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Task Requirements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            padding: 2rem;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column h2, .right-column h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .attachment {
+            display: flex;
+            align-items: center;
+        }
+        .attachment input[type="file"] {
+            display: none;
+        }
+        .attachment label {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .proposal-review {
+            margin-top: 2rem;
+        }
+        .proposal {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+        .proposal-header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .proposal-details {
+            display: none;
+            margin-top: 1rem;
+        }
+        .accept-button, .payment-button, .send-proposal-button {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .send-proposal-button {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Submit Your Task Requirements</h1>
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <h2>Client Input Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="budget">Budget</label>
+                <input type="text" id="budget" name="budget" placeholder="Enter your budget">
+            </div>
+            <div class="form-group">
+                <label for="timeline">Timeline</label>
+                <input type="date" id="timeline" name="timeline">
+            </div>
+            <div class="form-group">
+                <label for="length">Length of the Task (number of pages)</label>
+                <input type="number" id="length" name="length" placeholder="Enter number of pages">
+            </div>
+            <div class="form-group">
+                <label for="task-details">Details/Instructions</label>
+                <textarea id="task-details" name="task-details" rows="4" placeholder="Describe the task and any instructions"></textarea>
+            </div>
+            <div class="form-group attachment">
+                <input type="file" id="attachment" name="attachment">
+                <label for="attachment">📎 Attach files</label>
+            </div>
+        </form>
+    </div>
+    <div class="right-column">
+        <h2>Tutor Proposal Submission Area</h2>
+        <form>
+            <div class="form-group">
+                <label for="task-title">Title of the Task</label>
+                <input type="text" id="task-title" name="task-title" placeholder="Enter task title">
+            </div>
+            <div class="form-group">
+                <label for="proposed-price">Proposed Price</label>
+                <input type="number" id="proposed-price" name="proposed-price" placeholder="Enter your price">
+            </div>
+            <div class="form-group">
+                <label for="proposed-deadline">Proposed Deadline</label>
+                <input type="date" id="proposed-deadline" name="proposed-deadline">
+            </div>
+            <button type="submit" class="send-proposal-button">Send Proposal</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="left-column proposal-review">
+        <h2>Proposal Review Panel</h2>
+        <div class="proposal">
+            <div class="proposal-header">
+                <span>Tutor Name</span>
+                <span>Task Title</span>
+                <span>Price</span>
+                <span>Deadline</span>
+            </div>
+            <div class="proposal-details">
+                <p>Tutor qualifications and detailed descriptions...</p>
+            </div>
+        </div>
+        <button class="accept-button">Accept</button>
+    </div>
+    <div class="right-column">
+        <h2>Acceptance and Payment</h2>
+        <button class="payment-button">Proceed to Payment</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Contact Information | FAQs | Support</p>
+</div>
+
+</body>
+</html>
